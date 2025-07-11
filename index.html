@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DK Realtors.</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
     <div class="hero-section">
 
         <nav>
-
-            <h1 class="logo ">DK Realtors.</h1>
-
+            <h1 class="logo">DK Realtors.</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Buy</a></li>
@@ -21,23 +22,55 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
-
-            <button class="navbtn">Contact Us </button>
+            <button class="navbtn">Contact Us</button>
         </nav>
-
 
         <div class="intro">
             <h1 class="tagline">Find Your Dream Home</h1>
-            <p class="tagline2">We Understand the fact that modern people strive for maximium comforrt</p>
+            <p class="tagline2">We understand the fact that modern people strive for maximum comfort</p>
         </div>
 
-        <!-- <div class="search-section">
-            <div class="location">
-                
-            </div>
-        </div> -->
+<div class="search-section">
+  <div class="search-box">
 
-
+    <div class="search-item">
+      <label>Location</label>
+      <select>
+        <option disabled selected>Select Location</option>
+        <option>Larkana</option>
+        <option>Karachi</option>
+        <option>Islamabad</option>
+      </select>
     </div>
+
+    <div class="search-item">
+      <label>Property Type</label>
+      <select>
+        <option disabled selected>Select Property Type</option>
+        <option>Residential</option>
+        <option>Commercial</option>
+        <option>Office</option>
+      </select>
+    </div>
+
+    <div class="search-item">
+      <label>Max Price</label>
+      <select>
+        <option disabled selected>Select Max Price</option>
+        <option>Rs 10000000</option>
+        <option>Rs 20000000</option>
+        <option>Rs 30000000</option>
+      </select>
+    </div>
+
+    <div class="search-button">
+      <button><span class="material-icons">search</span></button>
+    </div>
+
+  </div>
+</div>
+    </div>
+    
+
 </body>
 </html>

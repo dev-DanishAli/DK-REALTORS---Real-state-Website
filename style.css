@@ -1,47 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     width: 100%;
 }
 
-.hero-section{
+.hero-section {
     height: 50rem;
-    background-image: url(villa.jpeg);
+    background-image: url(villa.jpeg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-.logo{
+.logo {
     margin: 10px 70px;
     font-size: 2rem;
-    color: black;
+    color: white;
 }
 
-ul{
-    position: relative;
+ul {
     list-style: none;
     display: flex;
     gap: 3rem;
     margin: 20px 70px;
 }
 
-.navbtn{
+.navbtn {
     background-color: #191919;
     height: 3rem;
     width: 10rem;
@@ -49,12 +48,13 @@ ul{
     border: none;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 nav ul li a {
     position: relative;
     display: inline-block;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding-bottom: 5px;
@@ -68,7 +68,7 @@ nav ul li a::after {
     bottom: 0;
     height: 3px;
     width: 0;
-    background-color: white;
+    background-color: black;
     transition: width 0.3s ease;
 }
 
@@ -78,28 +78,94 @@ nav ul li a:hover {
 
 nav ul li a:hover::after {
     width: 100%;
-    background-color: black;
 }
 
-.intro{
+.intro {
     text-align: center;
     margin-top: 5rem;
     color: black;
 }
 
-.tagline{
+.tagline {
     font-size: 5rem;
 }
 
-.search-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 120px;
-    width: 1200px;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+.tagline2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 2rem;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    flex: 1;
+}
+
+.search-item label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.search-item select {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.search-item select:focus {
+    border-color: #191919;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button button {
+    background-color: #6682ad;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.search-button button:hover {
+    background-color: #333;
+}
+
+.search-button .material-icons {
+    font-size: 1.5rem;
+}
