@@ -13,7 +13,7 @@ body {
 }
 
 .hero-section {
-  min-height: 100vh;
+  min-height: 80vh;
   background-image: url(villa.jpeg);
   background-size: cover;
   background-position: center;
@@ -164,15 +164,37 @@ nav {
   font-size: 1.5rem;
 }
 
-@media (max-width: 992px) {
-  .tagline {
-    font-size: 3rem;
-  }
-
-  .tagline2 {
-    font-size: 1rem;
-  }
+.achievements {
+  background-color: #191919;
+  padding: 2rem 1rem;
+  text-align: center;
 }
+
+.ach-elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.ach-elements h2 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem 2rem;
+  line-height: 1.2;
+}
+
+.span1 {
+  color: #a1b2cc;
+}
+
+.span2 {
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+  margin-top: 0.5rem;
+}
+
 
 @media (max-width: 768px) {
   .navbtn {
@@ -212,5 +234,35 @@ nav {
     font-size: 0.95rem;
   }
 
-  
+  .achievements {
+  background-color: #191919;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.ach-elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ach-elements h2 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem 2rem;
+  line-height: 1.2;
+}
+
+.span1 {
+  color: #a1b2cc;
+}
+
+.span2 {
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+  margin-top: 0.5rem;
+}
+
 }
