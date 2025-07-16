@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 
 .hero-section {
   min-height: 80vh;
-  background-image: url(villa.jpeg);
+  background-image: url(villa-1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,6 +195,177 @@ nav {
   margin-top: 0.5rem;
 }
 
+.popular-property {
+  padding-bottom: 2rem;
+}
+
+.popular-property .heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 10rem;
+  text-align: center;
+}
+
+.popular-property .heading h2 {
+  font-size: 2.5rem;
+}
+
+.popular-property .heading p {
+  color: #312a2a;
+  font-weight: 100;
+  max-width: 600px;
+}
+
+.popular-types {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0 4rem;
+  flex-wrap: wrap;
+}
+
+.ptype {
+  padding: 0.7rem 1.8rem;
+  border: none;
+  color: #a3a0a0;
+  font-weight: 100;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ptype.active {
+  background-color: #a1b2cc;
+  color: white;
+}
+
+.ptype:hover {
+  background-color: #ccc;
+}
+
+.alltypes {
+  padding: 0.7rem 1.8rem;
+  border: none;
+  background-color: #191919;
+  color: white;
+  font-weight: 100;
+  border-radius: 5px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.property-carousel-wrapper {
+  overflow: hidden;
+  padding: 2rem 2rem;
+}
+
+.property-carousel {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.property-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: scale(1.03);
+}
+
+.property-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.icons span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: #6682ad;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 992px) {
+  .property-card {
+    width: 250px;
+  }
+
+  .property-carousel-wrapper {
+    padding: 1rem;
+  }
+
+  .popular-property .heading {
+    margin: 2rem;
+  }
+}
 
 @media (max-width: 768px) {
   .navbtn {
@@ -234,35 +405,32 @@ nav {
     font-size: 0.95rem;
   }
 
-  .achievements {
-  background-color: #191919;
-  padding: 2rem 1rem;
-  text-align: center;
+  .ach-elements {
+    gap: 2rem;
+  }
+
+  .property-card {
+    width: 220px;
+  }
+
+  .popular-types {
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .alltypes {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
-.ach-elements {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
+@media (max-width: 576px) {
+  .property-card {
+    width: 190px;
+  }
 
-.ach-elements h2 {
-  font-size: 2.5rem;
-  color: white;
-  padding: 1rem 2rem;
-  line-height: 1.2;
-}
-
-.span1 {
-  color: #a1b2cc;
-}
-
-.span2 {
-  font-size: 1rem;
-  font-weight: 300;
-  display: block;
-  margin-top: 0.5rem;
-}
-
+  .property-carousel {
+    gap: 1rem;
+  }
 }
