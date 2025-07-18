@@ -224,12 +224,108 @@
     </div>
   </div>
 </div>
-
-
-
     </div>
   </section>
 
+  <section class="how-it-works-section">
+  <h2 class="how-it-works-title">How It Works</h2>
+
+  <!-- Steps with Icons -->
+  <div class="steps-container">
+    <div class="step active" onclick="showTab(0)">
+      <div class="icon-box"><i class="fas fa-home"></i></div>
+      <p>Discover House</p>
+    </div>
+    <div class="step" onclick="showTab(1)">
+      <div class="icon-box"><i class="fas fa-calendar-alt"></i></div>
+      <p>Schedule Visit</p>
+    </div>
+    <div class="step" onclick="showTab(2)">
+      <div class="icon-box"><i class="fas fa-shopping-bag"></i></div>
+      <p>Hassle-Free Purchase</p>
+    </div>
+    <div class="step" onclick="showTab(3)">
+      <div class="icon-box"><i class="fas fa-undo-alt"></i></div>
+      <p>Buyback Guarantee</p>
+    </div>
+  </div>
+
+  <!-- TAB 1 -->
+  <div class="how-card how-tab active-tab">
+    <div class="card-image">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern House" />
+    </div>
+    <div class="card-content">
+      <h3>Find The Perfect House</h3>
+      <p>DK Realtors owns hundreds of homes for sale near you. See homes on the market, or get a sneak peek at those that have yet to hit the market.</p>
+      <div class="card-footer">
+        <span>1/4</span>
+        <span>Discover House</span>
+        <div class="step-buttons">
+          <button onclick="prevTab()">Previous</button>
+          <button onclick="nextTab()">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2 -->
+  <div class="how-card how-tab">
+    <div class="card-image">
+      <img src="visit.jpeg" alt="Schedule Visit" />
+    </div>
+    <div class="card-content">
+      <h3>Schedule a Visit</h3>
+      <p>Pick a convenient time and date, and we'll ensure the property is ready for a hassle-free visit.</p>
+      <div class="card-footer">
+        <span>2/4</span>
+        <span>Schedule Visit</span>
+        <div class="step-buttons">
+          <button onclick="prevTab()">Previous</button>
+          <button onclick="nextTab()">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3 -->
+  <div class="how-card how-tab">
+    <div class="card-image">
+      <img src="purchase.jpeg" alt="Hassle-Free Purchase" />
+    </div>
+    <div class="card-content">
+      <h3>Hassle-Free Purchase</h3>
+      <p>We simplify your buying journey with transparent pricing, quick paperwork, and expert support throughout.</p>
+      <div class="card-footer">
+        <span>3/4</span>
+        <span>Hassle-Free Purchase</span>
+        <div class="step-buttons">
+          <button onclick="prevTab()">Previous</button>
+          <button onclick="nextTab()">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4 -->
+  <div class="how-card how-tab">
+    <div class="card-image">
+      <img src="gurrantee.jpeg" alt="Buyback Guarantee" />
+    </div>
+    <div class="card-content">
+      <h3>Buyback Guarantee</h3>
+      <p>Your satisfaction is our priority — if things don’t go as planned, our buyback policy protects your investment.</p>
+      <div class="card-footer">
+        <span>4/4</span>
+        <span>Buyback Guarantee</span>
+        <div class="step-buttons">
+          <button onclick="prevTab()">Previous</button>
+          <button disabled>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <script src="script.js"></script>
 </body>
 </html>

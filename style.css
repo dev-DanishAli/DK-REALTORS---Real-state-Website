@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +15,7 @@ body {
 
 .hero-section {
   min-height: 80vh;
-  background-image: url(villa-1.jpg);
+  background-image: url(villa-2.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,7 +85,7 @@ nav {
 .intro {
   text-align: center;
   margin-top: 4rem;
-  color: vlack;
+  color: black;
   padding: 0 1rem;
 }
 
@@ -197,6 +198,7 @@ nav {
 
 .popular-property {
   padding-bottom: 2rem;
+  background: linear-gradient(white 0%, white 50%, #191919 50%, #191919 100%);
 }
 
 .popular-property .heading {
@@ -344,6 +346,172 @@ nav {
   display: block;
 }
 
+.how-it-works-section {
+  background-color: #191919;
+  color: white;
+  padding: 0px 20px 100px;
+  text-align: center;
+}
+
+.how-it-works-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  position: relative;
+  gap: 10px;
+}
+
+.steps-container::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background-color: #555;
+  z-index: 0;
+}
+
+.step {
+  text-align: center;
+  z-index: 1;
+  flex: 1;
+  min-width: 160px;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #191919;
+  font-size: 20px;
+}
+
+.step.active .icon-box {
+  background-color: #6682ad;
+  color: white;
+}
+
+.step p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.how-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #191919;
+}
+
+.card-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #888;
+}
+
+.card-footer a {
+  color: #6682ad;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.how-tab {
+  display: none;
+}
+
+.how-tab.active-tab {
+  display: flex;
+}
+
+.card-footer span{
+    position: relative;
+    top: 25px;
+}
+
+.step-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.step-buttons button {
+  background-color: #6682ad;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.step-buttons button:hover:not(:disabled) {
+  background-color: #445b83;
+}
+
+.step-buttons button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -399,6 +567,7 @@ nav {
 
   .tagline {
     font-size: 2.2rem;
+    color: white;
   }
 
   .tagline2 {
@@ -423,14 +592,49 @@ nav {
     margin-left: 0;
     text-align: center;
   }
-}
 
-@media (max-width: 576px) {
-  .property-card {
-    width: 190px;
+  .steps-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: hidden;
   }
 
-  .property-carousel {
-    gap: 1rem;
+  .steps-container::before {
+    display: none;
+  }
+
+  .step {
+    min-width: 120px;
+    flex: 1 1 120px;
+  }
+
+  .icon-box {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .step p {
+    font-size: 12px;
+  }
+
+  .how-card {
+    flex-direction: column;
+  }
+
+  .card-image,
+  .card-content {
+    min-width: 100%;
+  }
+
+  .step-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-buttons button {
+    width: 100%;
+    max-width: 200px;
   }
 }
