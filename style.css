@@ -677,8 +677,9 @@ nav {
 .neighbourhood-card {
   position: relative;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .city-card img,
 .neighbourhood-card img {
