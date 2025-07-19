@@ -15,7 +15,7 @@ body {
 
 .hero-section {
   min-height: 80vh;
-  background-image: url(villa-2.jpeg);
+  background-image: url(Assets/villa-2.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -562,7 +562,7 @@ nav {
 
 .review-wrapper{
   position: absolute;
-  top: 8rem;
+  top: 10rem;
   left: 10rem;
   display: flex;
   justify-content: space-between;
@@ -583,7 +583,7 @@ nav {
 
 .review-card-content{
   position: absolute;
-  top: 5rem;
+  top: 7rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -622,10 +622,110 @@ nav {
     margin-top: 13px;
 }
 
-/* .neighbourhood-section{
-  height: 100%;
-} */
+.neighbourhood-section {
+  margin-top: -5rem;
+  padding: 60px 20px;
+  background-color: #f7f6f6;
+}
 
+.neighbourhood-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.neighbourhood-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 600; 
+  color: #222;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.heading-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #000;
+  margin: 10px auto 20px;
+  border-radius: 2px;
+}
+
+.neighbourhood-heading p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555; 
+  margin-top: 10px;
+}
+
+.neighbourhood-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.column,
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.city-card,
+.neighbourhood-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.city-card img,
+.neighbourhood-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+#large-card img {
+  height: 360px;
+  object-fit: cover;
+}
+
+#pic-neb {
+  height: 170px;
+}
+
+.city-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.city-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.city-info p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.card-text h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-text p {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+}
 
 @keyframes scroll {
   0% {
@@ -717,6 +817,14 @@ nav {
   .card-footer {
     justify-content: flex-start;
     margin-top: 8px;
+  }
+
+   .neighbourhood-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .neighbourhood-heading h2 {
+    font-size: 2rem;
   }
 }
 
@@ -826,6 +934,7 @@ nav {
   .reviews-section {
     padding: 2rem 1rem;
     height: auto;
+    margin-top: 40px;
   }
 
   .reviews-heading {
@@ -883,5 +992,20 @@ nav {
   .card-footer img {
     width: 50px;
     height: 50px;
+  }
+
+  .neighbourhood-section{
+    margin-top: 40px;
+  }
+   .neighbourhood-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .neighbourhood-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .neighbourhood-heading p {
+    font-size: 0.95rem;
   }
 }
