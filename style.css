@@ -512,6 +512,121 @@ nav {
   cursor: default;
 }
 
+.reviews-section{
+    height: 100vh;
+    position: relative;
+}
+
+.reviews-heading{
+  position: absolute;
+  width: 80%;
+  left: 4rem;
+  margin: -1rem auto 0;
+}
+
+.review-header{
+    position: absolute;
+    left: 10rem;
+    top: 5rem;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.review-buttons{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 6.5rem;
+}
+
+.review-buttons button{
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: #6682ad;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.review-buttons button:nth-child(2){
+    height: 60px;
+    width: 200px;
+    background-color: #ccc;
+}
+
+.review-buttons button:hover{
+  background-color: #6682ad;
+  transition: ease 0.5s;
+}
+
+.review-wrapper{
+  position: absolute;
+  top: 8rem;
+  left: 10rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  margin: 8rem auto 1rem;
+  padding: 0 6rem;
+}
+
+.review-card{
+  height: 450px;
+  width: 370px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 36px -25px #000000;
+  position: relative;
+  padding: 2rem;
+}
+
+.review-card-content{
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card-content .card-stars{
+  font-size: 20px;
+  color: rgb(248, 248, 85);
+}
+
+.review-card-content .card-text{
+  color: #a09999;
+  letter-spacing: 1px;
+  padding-right: 1rem;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.card-footer img{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-footer h6{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #000000;
+    margin-top: 13px;
+}
+
+/* .neighbourhood-section{
+  height: 100%;
+} */
+
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -532,6 +647,76 @@ nav {
 
   .popular-property .heading {
     margin: 2rem;
+  }
+
+  .reviews-section {
+    height: auto;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+
+  .reviews-heading {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .review-header {
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .review-buttons {
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .review-buttons button {
+    height: 50px;
+    width: 50px;
+
+  }
+
+  .review-buttons button:nth-child(2) {
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    min-width: 140px;
+    background-color: #ccc;
+  }
+
+  .review-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2rem auto 0;
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+  }
+
+  .review-card-content {
+    position: relative;
+    top: 2rem;
+  }
+
+  .card-footer {
+    justify-content: flex-start;
+    margin-top: 8px;
   }
 }
 
@@ -637,4 +822,6 @@ nav {
     width: 100%;
     max-width: 200px;
   }
+
+  
 }
