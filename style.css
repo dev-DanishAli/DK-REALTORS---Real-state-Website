@@ -27,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem 2rem;
+  padding: 2rem 7rem;
 }
 
 .logo {
@@ -623,7 +623,7 @@ nav {
 }
 
 .neighbourhood-section {
-  margin-top: -5rem;
+  margin-top: 3rem;
   padding: 60px 20px;
   background-color: #f7f6f6;
 }
@@ -777,8 +777,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  margin: 5rem auto;
+  width: 70%;
+  margin: 3rem auto;
 }
 
 
@@ -819,22 +819,218 @@ nav {
   font-weight: 500;
 }
 
-.team-wrapper button{
-    height: 60px;
-  width: 60px;
-  border: none;
-  background-color: #6682ad;
-  font-size: 1.2rem;
-  color: white;
-  position: static;
-  margin: 0 2rem;
-  background-color: black;
-  color: white;
+ footer{ 
+  height: 70vh;
+  background-color: #191919;
+  margin-top: -80px;
 }
 
-.team-wrapper button:hover{
-  background-color: #9c9c9c;
-  transition: ease 0.3s;
+.footer-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  width: 80%;
+  margin: 2rem auto;
+  color: white;
+  border-bottom: 0.5px solid #5c5b5b;
+}
+
+.footer-header-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-header-right p{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.footer-header-right button{
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  border: none;
+  color: white;
+  background-color: #6682ad;
+}
+
+.footer-header h2{
+  font-size: 2.5rem;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 55%;
+  margin: 2rem auto;
+}
+
+.footer-content-left{
+  width: 30%;
+  height: 100%;
+  color: white;
+  position: relative;
+}
+
+.footer-content-left p{
+  position: absolute;
+  font-size: 20px;
+  font-weight: normal;
+  top: 1rem;
+}
+
+.footer-content-left p span{
+  position: absolute;
+  font-size: 12px;
+  top: 2.8rem;
+  color: #9c9c9c;
+}
+
+.email-input{
+  position: absolute;
+  top: 7rem;
+}
+
+.email-input input{
+  width: 280px;
+  height: 55px;
+  padding: 0.5rem;
+  font-size: 15px;
+  font-weight: lighter;
+  border: none;
+  border-bottom: 0.5px solid #ccc;
+  background-color: #161616;
+}
+
+.email-input button{
+  height: 53px;
+  width: 53px;
+  border: none;
+  background-color:white;
+  font-size: 1.2rem;
+  color: black;
+  margin-left: 10px;
+}
+
+.footer-content-middle{
+  width: 25%;
+  height: 100%;
+  margin-top: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer-content-middle ul li{
+  list-style: none;
+  margin-top: 15px;
+}
+
+.footer-content-middle ul li a{
+  text-decoration: none;
+  font-weight: normal;
+  color: rgb(146, 139, 139);
+  font-size: 13px;
+}
+
+.footer-content-right{
+   width: 25%;
+  height: 100%;
+  margin-top: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer-content-right ul li{
+  list-style: none;
+  margin-top: 15px;
+}
+
+.footer-content-right ul li a{
+  text-decoration: none;
+  font-weight: normal;
+  color: rgb(146, 139, 139);
+  font-size: 13px;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 3px;
+  margin: -10px auto;
+}
+
+.footer-bottom-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  color: rgb(150, 148, 148);
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.footer-bottom-middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  color: rgb(150, 148, 148);
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+
+.footer-bottom-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+.footer-bottom-right i{
+  color: white;
+  font-size: 20px;
+}
+
+.footer-header-right button:hover,
+.email-input button:hover {
+  background-color: #4d6d98;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.footer-content-middle ul li a:hover,
+.footer-content-right ul li a:hover {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+
+.footer-bottom-right i:hover {
+  color: #6682ad;
+  transform: scale(1.2);
+  transition: 0.3s ease;
 }
 
 @keyframes scroll {
@@ -847,6 +1043,10 @@ nav {
 }
 
 @media (max-width: 992px) {
+  nav{
+    padding: 1rem 2rem;
+  }
+
   .property-card {
     width: 250px;
   }
@@ -941,7 +1141,7 @@ nav {
     flex-direction: column;
     align-items: center;
     padding: 0 2rem;
-    margin: 3rem auto;
+    margin: 3rem auto 0;
   }
 
   .team-header {
@@ -990,9 +1190,109 @@ nav {
     max-width: 320px;
   }
 
-  .team-wrapper button{
-    display: none;
-}
+  .team-card:nth-child(3){
+    margin-bottom: 2rem;
+  }
+
+   footer {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .footer-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .footer-header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .footer-content-left,
+  .footer-content-middle,
+  .footer-content-right {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer-content-left {
+    position: static;
+  }
+
+  .footer-content-left p,
+  .footer-content-left p span {
+    position: static;
+    font-size: 16px;
+  }
+
+  .email-input {
+    position: static;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .email-input input {
+    width: 80%;
+    max-width: 300px;
+    height: 45px;
+  }
+
+  .email-input button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer-content-middle,
+  .footer-content-right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-content-middle ul,
+  .footer-content-right ul {
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 2rem;
+    height: auto;
+    gap: 10px;
+  }
+
+  .footer-bottom-left,
+  .footer-bottom-middle,
+  .footer-bottom-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-bottom-right i {
+    margin: 0 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1221,7 +1521,7 @@ nav {
     font-size: 14px;
     height: 3rem;
   }
-  
+
   .team-wrapper {
     flex-direction: column;
     justify-content: center;
@@ -1254,10 +1554,60 @@ nav {
     padding-top: 0.5rem;
   }
 
-  .team-wrapper button {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
+  footer{
+    margin-top: 3rem;
+  }
+
+  .footer-header{
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+.footer-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-header-right button {
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .footer-content-left p {
+    font-size: 15px;
+  }
+
+  .footer-content-left p span {
+    font-size: 12px;
+  }
+
+  .email-input{
+    gap: 20px;
+  }
+
+  .email-input input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .email-input button {
+    height: 40px;
+    width: 40px;
     font-size: 1rem;
+  }
+
+  .footer-content-middle ul li a,
+  .footer-content-right ul li a {
+    font-size: 13px;
+  }
+
+  .footer-bottom-left,
+  .footer-bottom-middle,
+  .footer-bottom-right {
+    font-size: 13px;
+  }
+
+  .footer-bottom-right i {
+    font-size: 18px;
   }
 }
