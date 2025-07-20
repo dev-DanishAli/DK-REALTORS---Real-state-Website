@@ -1661,8 +1661,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
-    margin: 5rem auto 2rem;
-    width: 90%;
+    margin: 5rem auto 4rem;
+    width: 100%;
   }
 
   .team-wrapper {
